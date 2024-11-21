@@ -1,0 +1,33 @@
+/* GetTest.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.loading {
+    font-size: 1.5em;
+    text-align: center;
+    color: #007bff;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.data-display {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    font-family: monospace;
+    font-size: 1em;
+    white-space: pre-wrap; /* Ensures JSON wraps nicely */
+    word-break: break-word;
+}
