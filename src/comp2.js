@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Comp2.css'; 
 
 const PostTest = ({ params }) => {
-    //variable declarations
     const [data, setData] = useState([{ key: 'title', value: '' }, { key: 'body', value: '' }, { key: 'userId', value: 1 }]);
     const [resp, setResp] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -22,7 +21,6 @@ const PostTest = ({ params }) => {
         setData(data.filter((_, i) => i !== index));
     };
 
-    // validates url and runs post request to fetch data
     const postData = async () => {
         if (!params?.baseurl || !params?.endpoint) {
             setError("Invalid base URL or endpoint.");
@@ -63,7 +61,6 @@ const PostTest = ({ params }) => {
         postData();
     };
 
-    //display recieved data
     return (
         <div className="container">
             <h1>Create a New Post</h1>

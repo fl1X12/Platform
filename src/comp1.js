@@ -7,7 +7,6 @@ const GetTest = ({ params }) => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        //variable representing url information
         const { baseurl, endpoint } = params || {};
         const url = `${baseurl}/${endpoint}`;
 
@@ -15,7 +14,6 @@ const GetTest = ({ params }) => {
             return;
         }
 
-        //asyncronously run fetch 
         const getJSON = async () => {
             try {
                 const response = await fetch(url);
@@ -39,7 +37,6 @@ const GetTest = ({ params }) => {
     if (loading) return <h1>Loading...</h1>;
     if (error) return <div>Error: {error}</div>;
     
-    //returns json string with fetched data
     return (
         <div>
             <pre>{JSON.stringify(data, null, 2)}</pre>
