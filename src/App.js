@@ -57,6 +57,7 @@ function App() {
   };
 
   return (
+    {/*form for input*/} 
     <div>
       {/* Input handler */}
       <div className="InputHandler">
@@ -68,6 +69,7 @@ function App() {
           <option value="GET">GET Request</option>
           <option value="POST">POST Request</option>
         </select>
+        {/*form element that accepts the base url and endpoint*/}
         <input 
           type="text" 
           ref={URLref} 
